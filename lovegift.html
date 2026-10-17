@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>هدية صغيرة</title>
+<!-- معاينة المشاركة: بدّلي الرابط والصورة بعد الرفع (تكون ثابتة لكل الروابط) -->
+<meta property="og:title" content="وصلتك هدية صغيرة (*^ω^*)">
+<meta property="og:description" content="افتحي الرابط عند الموعد">
+<meta property="og:image" content="https://YOUR-SITE.netlify.app/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400&family=IBM+Plex+Sans+Arabic:wght@200;300&family=Katibeh&family=Lateef:wght@300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><p style="text-align:center">يلزم تفعيل جافاسكربت لفتح الهدية</p></noscript>
+<style>
+:root{--h:340}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{min-height:100vh;font-family:'IBM Plex Sans Arabic',Tahoma,sans-serif;font-weight:200;font-size:17px;color:hsl(var(--h) 22% 30%);overflow-x:hidden;transition:color .6s}
+#bg{position:fixed;inset:0;z-index:-1;background-color:hsl(var(--h) 85% 96%);background-size:cover;background-position:center;transition:background-color .6s}
+#bg.pre{background-image:radial-gradient(circle at 15% 12%,hsl(var(--h) 90% 90%),transparent 55%),radial-gradient(circle at 88% 88%,hsl(calc(var(--h) + 30) 85% 90%),transparent 58%)}
+#bg::before{content:"";position:absolute;inset:0}
+#bg[data-pat=grid]::before{background-image:linear-gradient(hsl(var(--h) 50% 78%/.4) 1px,transparent 1px),linear-gradient(90deg,hsl(var(--h) 50% 78%/.4) 1px,transparent 1px);background-size:30px 30px}
+#bg[data-pat=dots]::before{background-image:radial-gradient(hsl(var(--h) 55% 74%/.6) 2px,transparent 2.5px);background-size:22px 22px}
+#bg[data-pat=check]::before{background-image:conic-gradient(hsl(var(--h) 60% 85%/.4) 25%,transparent 0 50%,hsl(var(--h) 60% 85%/.4) 0 75%,transparent 0);background-size:60px 60px}
+#bg::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 70px 38px #fff,inset 0 0 160px 60px rgba(255,255,255,.55);pointer-events:none}
+.screen{display:none;min-height:100vh;padding:26px 16px;align-items:center;justify-content:center}
+.screen.on{display:flex;animation:in .7s ease}
+@keyframes in{from{transform:translateY(14px)}}
+.card{width:100%;max-width:470px;text-align:center;padding:30px 22px;border-radius:30px;background:hsl(var(--h) 70% 99%/.76);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid hsl(var(--h) 45% 82%);box-shadow:0 14px 40px hsl(var(--h) 55% 72%/.3)}
+h1,h2{font-family:'Aref Ruqaa',serif;font-weight:400;margin:0;font-size:1.9rem}
+.k{display:block;direction:ltr;font-size:1.2rem;opacity:.75;margin:6px 0 12px;letter-spacing:.05em}
+p{line-height:2;margin:6px 0}
+input,textarea{width:100%;font:inherit;font-weight:300;color:inherit;padding:11px 14px;margin:6px 0;border-radius:18px;border:1px solid hsl(var(--h) 40% 80%);background:rgba(255,255,255,.7)}
+input::placeholder,textarea::placeholder{opacity:.5}
+textarea{min-height:130px;line-height:2;resize:vertical}
+:focus-visible{outline:2px solid hsl(var(--h) 55% 65%);outline-offset:3px}
+.pin{text-align:center;letter-spacing:.7em;font-size:1.6rem;direction:ltr;padding-inline-start:calc(14px + .7em)}
+.btn{font:inherit;font-weight:300;font-size:1.05rem;color:inherit;cursor:pointer;padding:10px 26px;border-radius:999px;border:1px solid hsl(var(--h) 40% 65%);background:hsl(var(--h) 70% 87%);transition:transform .2s,background .4s}
+.btn:hover{transform:translateY(-2px);background:hsl(var(--h) 75% 91%)}
+.btn.g{background:transparent}
+.nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.stp{display:flex;gap:7px;justify-content:center;margin-bottom:16px}
+.stp i{width:8px;height:8px;border-radius:8px;background:hsl(var(--h) 40% 84%);transition:.4s}
+.stp i.on{width:24px;background:hsl(var(--h) 50% 65%)}
+.pic{display:block;width:128px;height:128px;margin:0 auto 12px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 1px hsl(var(--h) 45% 80%),0 8px 20px hsl(var(--h) 50% 72%/.35)}
+.drop{display:block;margin:12px 0;padding:14px;border-radius:20px;border:1px dashed hsl(var(--h) 40% 66%);cursor:pointer;font-weight:300;font-size:.95rem}
+.drop .pic{margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}
+.chip{font:inherit;font-weight:300;font-size:.92rem;color:inherit;cursor:pointer;padding:6px 15px;border-radius:999px;border:1px solid hsl(var(--h) 40% 78%);background:rgba(255,255,255,.6);display:flex;align-items:center;gap:7px}
+.chip.sel{background:hsl(var(--h) 70% 87%);border-color:hsl(var(--h) 40% 60%)}
+.chip s{width:13px;height:13px;border-radius:50%;display:block}
+.err{min-height:1.6em;font-size:.95rem;opacity:.85;margin:4px 0 0}
+.hide{display:none!important}
+.small{font-size:.88rem;opacity:.7;line-height:1.9}
+/* العد التنازلي */
+.cd{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:9px;margin:20px 0 10px}
+.cd div{padding:12px 2px;border-radius:20px;background:hsl(var(--h) 80% 94%/.8);border:1px solid hsl(var(--h) 45% 84%)}
+.cd b{display:block;font-weight:200;font-size:2.2rem;line-height:1.1;direction:ltr;font-variant-numeric:tabular-nums}
+.cd small{font-size:.82rem;font-weight:300}
+.row{display:flex;gap:18px;justify-content:center;align-items:center;min-height:70px;margin-top:22px}
+#no{transition:left .25s,top .25s,background .4s;background:hsl(var(--h) 70% 97%)}
+.shake{animation:sh .45s}
+@keyframes sh{20%,60%{transform:translateX(-9px)}40%,80%{transform:translateX(9px)}}
+/* الرسالة */
+.letter{max-width:520px;transform-origin:top;animation:unf 1.4s cubic-bezier(.2,.8,.2,1);padding:36px 26px 30px;line-height:2.3}
+@keyframes unf{from{transform:perspective(900px) rotateX(-75deg)}}
+#msg{white-space:pre-wrap;text-align:right;min-height:100px;margin-top:10px}
+.f1{font-family:'Lateef',serif!important;font-weight:300!important;font-size:1.8rem!important}
+.f2{font-family:'Aref Ruqaa',serif!important;font-weight:400!important;font-size:1.25rem!important}
+.f3{font-family:'Katibeh',serif!important;font-weight:400!important;font-size:1.7rem!important}
+.f4{font-size:1.1rem!important}
+.pol{width:190px;margin:26px auto 4px;padding:9px 9px 26px;background:#fff;border-radius:6px;box-shadow:0 8px 22px hsl(var(--h) 45% 70%/.35);transform:rotate(-3deg);position:relative}
+.pol::before{content:"";position:absolute;top:-11px;left:50%;width:70px;height:20px;transform:translateX(-50%) rotate(3deg);background:hsl(var(--h) 80% 86%/.85)}
+.pol img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.sg{margin-top:12px;direction:ltr;font-size:1.3rem}
+.fl{position:fixed;bottom:-40px;z-index:5;pointer-events:none;direction:ltr;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-112vh) rotate(18deg);opacity:0}}
+#pv{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:8px;align-items:center;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid hsl(var(--h) 40% 78%);font-size:.85rem;white-space:nowrap}
+#pv .btn{padding:3px 13px;font-size:.85rem}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<div id="bg" class="pre" data-pat="grid"></div>
+<div id="pv" class="hide"><span>معاينة (*'ω'*)</span><button class="btn g" id="pvSkip">تخطي العد</button><button class="btn" id="pvBack">رجوع</button></div>
+
+<section class="screen on" id="boot"><div class="card"><h2>جاري فتح هديتك</h2><span class="k">(*'ω'*)</span><p>لو طالت الصفحة أو بقيت فاضية، انسخي الرابط وافتحيه مباشرة في Chrome أو Safari بدل المتصفح الداخلي للتطبيق.</p></div></section>
+
+<!-- ===== صانعة الرابط ===== -->
+<section class="screen" id="s1"><div class="card">
+  <div class="stp"><i class="on"></i><i></i><i></i><i></i></div>
+  <h1>هدية صغيرة</h1><span class="k">(*^ω^*)</span>
+  <p>اختاري رقماً سرياً من أربع خانات، وصورة تظهر لها أول ما تفتح الرابط.</p>
+  <input class="pin" id="pin" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="0000" aria-label="الرقم السري">
+  <label class="drop"><img class="pic hide" id="pv1" alt=""><span id="t1">اختاري صورتك الأولى</span><input type="file" accept="image/*" hidden id="f1"></label>
+  <p class="err" id="e1"></p>
+  <div class="nav"><button class="btn" data-go="s2">التالي</button></div>
+  <p class="small" style="margin:14px 0 0;opacity:.35;font-size:.7rem">v3</p>
+</div></section>
+
+<section class="screen" id="s2"><div class="card">
+  <div class="stp"><i></i><i class="on"></i><i></i><i></i></div>
+  <h2>متى عيد ميلادها؟</h2><span class="k">(＞人＜;)</span>
+  <p>تبقى المفاجأة مقفولة لين هذا الوقت، بتوقيت جهازها هي.</p>
+  <input id="nm" placeholder="اسمها (اختياري)">
+  <input type="datetime-local" id="dt" aria-label="موعد الفتح">
+  <p class="err" id="e2"></p>
+  <div class="nav"><button class="btn g" data-go="s1">رجوع</button><button class="btn" data-go="s3">التالي</button></div>
+</div></section>
+
+<section class="screen" id="s3"><div class="card">
+  <div class="stp"><i></i><i></i><i class="on"></i><i></i></div>
+  <h2>رسالتك لها</h2><span class="k">(*'ω'*)</span>
+  <textarea id="ms" class="f1" placeholder="اكتبي لها شيئاً من قلبك.."></textarea>
+  <div class="chips" id="fonts"></div>
+  <label class="drop"><img class="pic hide" id="pv2" alt=""><span id="t2">أضيفي صورة لطيفة تظهر مع الرسالة</span><input type="file" accept="image/*" hidden id="f2"></label>
+  <p class="err" id="e3"></p>
+  <div class="nav"><button class="btn g" data-go="s2">رجوع</button><button class="btn" data-go="s4">التالي</button></div>
+</div></section>
+
+<section class="screen" id="s4"><div class="card">
+  <div class="stp"><i></i><i></i><i></i><i class="on"></i></div>
+  <h2>اختاري الخلفية</h2><span class="k">(๑>◡<๑)</span>
+  <p class="small">ألوان الصفحة كلها تتغير مع الخلفية، جرّبي وشوفي.</p>
+  <div class="chips" id="bgs"></div>
+  <label class="drop"><span id="t3">أو ارفعي خلفية من عندك</span><input type="file" accept="image/*" hidden id="f3"></label>
+  <div class="nav"><button class="btn g" data-go="s3">رجوع</button><button class="btn" id="mk">إنشاء الرابط</button></div>
+</div></section>
+
+<section class="screen" id="s5"><div class="card">
+  <h2>جاهز</h2><span class="k">(*^ω^*)</span>
+  <p>هذا رابط هديتها. أرسلي لها الرابط، وأخبريها بالرقم السري على حدة.</p>
+  <input id="lk" readonly aria-label="الرابط" dir="ltr">
+  <p class="small" id="sz"></p>
+  <div class="nav">
+    <button class="btn" id="cp">نسخ الرابط</button>
+    <button class="btn g" id="sh">مشاركة</button>
+    <button class="btn g" id="pr">معاينة</button>
+    <button class="btn g" data-go="s1">تعديل</button>
+  </div>
+</div></section>
+
+<!-- ===== صفحة المستلمة ===== -->
+<section class="screen" id="lock"><div class="card">
+  <img class="pic vp hide" alt="">
+  <h1 class="vn"></h1><span class="k">(*'ω'*)</span>
+  <p>المفاجأة تنفتح بعد</p>
+  <div class="cd"><div id="bd"><b id="cdd">00</b><small>يوم</small></div><div><b id="cdh">00</b><small>ساعة</small></div><div><b id="cdm">00</b><small>دقيقة</small></div><div><b id="cds">00</b><small>ثانية</small></div></div>
+  <p id="when"></p>
+  <p>صبراً يا حلوة.. كل شيء في وقته (＞人＜;)</p>
+</div></section>
+
+<section class="screen" id="pinS"><div class="card" id="pinC">
+  <img class="pic vp hide" alt="">
+  <h2>حان الوقت</h2><span class="k">(*^ω^*)</span>
+  <p>اكتبي الرقم السري لتفتحي هديتك</p>
+  <input class="pin" id="vpin" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="0000" aria-label="الرقم السري">
+  <p class="err" id="ve"></p>
+</div></section>
+
+<section class="screen" id="askS"><div class="card">
+  <h2>هل تودين فتح هدية يوم ميلادك؟</h2><span class="k">(*^ω^*)</span>
+  <div class="row"><button class="btn" id="yes">نعم</button><button class="btn g" id="no">لا</button></div>
+</div></section>
+
+<section class="screen" id="letter"><div class="card letter">
+  <h2 class="vt"></h2><span class="k">(*^ω^*)</span>
+  <div id="msg"></div>
+  <div class="pol hide" id="pol"><img alt=""></div>
+  <div class="sg">(*'ω'*) ♡</div>
+</div></section>
+
+<section class="screen" id="bad"><div class="card"><h2>الرابط ما اشتغل</h2><span class="k">(＞人＜;)</span><p>يبدو أنه انقطع أثناء الإرسال، فبعض التطبيقات تقطع الروابط الطويلة. اطلبي رابطاً جديداً، أو افتحيه في Chrome أو Safari.</p><p class="small" id="bdetail"></p></div></section>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],pad=n=>String(n).padStart(2,'0');
+const root=document.documentElement;
+const BG=[['sakura','وردي',340,'grid'],['lilac','لافندر',268,'dots'],['mint','نعناع',158,'grid'],['sky','سماء',205,'check'],['peach','خوخ',18,'dots'],['butter','زبدة',46,'check']];
+const FN=['شاعري','خط يد','زخرفي','ناعم'];
+const D={p:'',i1:'',n:'',d:'',m:'',f:1,b:'sakura',i2:''};
+let cur='',V=null,SKIP=false;
+addEventListener('error',e=>{if(!cur){$$('.screen').forEach(x=>x.classList.toggle('on',x.id==='bad'));const d=$('#bdetail');if(d)d.textContent='تفاصيل: '+e.message}});
+
+const hs=s=>{let h=5381;for(const c of 'g'+s+'x')h=((h<<5)+h+c.charCodeAt(0))>>>0;return h};
+const enc=o=>btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const dec=s=>{s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return JSON.parse(decodeURIComponent(escape(atob(s))))};
+const show=id=>{$$('.screen').forEach(s=>s.classList.toggle('on',s.id===id));cur=id;scrollTo(0,0)};
+const shrink=(f,m,q)=>new Promise((ok,no)=>{const r=new FileReader();r.onerror=no;r.onload=()=>{const i=new Image();i.onerror=no;i.onload=()=>{const k=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);ok(c.toDataURL('image/jpeg',q))};i.src=r.result};r.readAsDataURL(f)});
+
+/* الخلفية والألوان */
+function hueOf(src){const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=c.height=16;const x=c.getContext('2d');x.drawImage(i,0,0,16,16);const d=x.getImageData(0,0,16,16).data;let r=0,g=0,b=0;for(let k=0;k<d.length;k+=4){r+=d[k];g+=d[k+1];b+=d[k+2]}r/=256;g/=256;b/=256;const mx=Math.max(r,g,b),mn=Math.min(r,g,b),df=mx-mn;let h=340;if(df>12){h=mx===r?((g-b)/df)%6:mx===g?(b-r)/df+2:(r-g)/df+4;h=Math.round((h*60+360)%360)}root.style.setProperty('--h',h)};i.src=src}
+function setBg(b){const el=$('#bg');if(b.startsWith('data:')){el.className='';el.dataset.pat='';el.style.backgroundImage=`url(${b})`;hueOf(b)}else{const p=BG.find(x=>x[0]===b)||BG[0];el.className='pre';el.style.backgroundImage='';el.dataset.pat=p[3];root.style.setProperty('--h',p[2])}}
+
+/* ===== المنشئة ===== */
+const err=(id,t)=>{$(id).textContent=t};
+$('#pin').addEventListener('input',e=>e.target.value=e.target.value.replace(/\D/g,''));
+function chips(){
+  $('#bgs').innerHTML='';BG.forEach(p=>{const b=document.createElement('button');b.className='chip'+(D.b===p[0]?' sel':'');b.innerHTML=`<s style="background:hsl(${p[2]} 75% 82%)"></s>${p[1]}`;b.onclick=()=>{D.b=p[0];setBg(p[0]);chips()};$('#bgs').appendChild(b)});
+  $('#fonts').innerHTML='';FN.forEach((n,i)=>{const b=document.createElement('button');b.className='chip'+(D.f===i+1?' sel':'');b.textContent=n;b.onclick=()=>{D.f=i+1;$('#ms').className='f'+D.f;chips()};$('#fonts').appendChild(b)});
+}
+function pick(inp,key,max,q,img,txt,label){$(inp).addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{D[key]=await shrink(f,max,q);if(img){$(img).src=D[key];$(img).classList.remove('hide')}if(key==='b')setBg(D.b);chips();$(txt).textContent=label}catch(x){$(txt).textContent='ما قدرت أقرأ الصورة، جرّبي غيرها'}})}
+pick('#f1','i1',300,.55,'#pv1','#t1','تغيير الصورة');
+pick('#f2','i2',380,.55,'#pv2','#t2','تغيير الصورة');
+pick('#f3','b',480,.45,null,'#t3','تم رفع الخلفية، اضغطي لتغييرها');
+$$('[data-go]').forEach(b=>b.onclick=()=>{
+  const to=b.dataset.go,from=cur;
+  if(from==='s1'&&to==='s2'){if(!/^\d{4}$/.test($('#pin').value))return err('#e1','اكتبي أربع أرقام فقط (＞人＜;)');D.p=$('#pin').value;err('#e1','')}
+  if(from==='s2'&&to==='s3'){D.n=$('#nm').value.trim();D.d=$('#dt').value;if(!D.d)return err('#e2','اختاري التاريخ والوقت (＞人＜;)');err('#e2','')}
+  if(from==='s3'&&to==='s4'){D.m=$('#ms').value.trim();if(!D.m)return err('#e3','اكتبي رسالة ولو قصيرة (＞人＜;)');err('#e3','')}
+  show(to);
+});
+$('#mk').onclick=()=>{
+  const url=location.href.split('#')[0]+'#v='+enc(Object.assign({},D,{p:hs(D.p)}));
+  $('#lk').value=url;const kb=Math.round(url.length/1024);
+  $('#sz').textContent=`حجم الرابط ${kb} كيلوبايت.`+(kb>40?' الرابط طويل وبعض التطبيقات قد تقطعه، جرّبي صوراً أقل أو خلفية جاهزة.':'')+(/^(file|blob):/.test(location.protocol)?' تنبيه: أنتِ فاتحة الملف من جهازك، فهذا الرابط يشتغل عندك فقط. انشري الموقع أولاً ثم أنشئي الرابط من عنوانه.':'');
+  show('s5');
+};
+$('#cp').onclick=()=>{const u=$('#lk').value;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>$('#cp').textContent='تم النسخ (*^ω^*)').catch(()=>{$('#lk').select();document.execCommand&&document.execCommand('copy')})};
+$('#sh').onclick=()=>navigator.share?navigator.share({title:'هدية صغيرة',url:$('#lk').value}).catch(()=>{}):$('#cp').click();
+$('#pr').onclick=()=>{SKIP=false;$('#pv').classList.remove('hide');view(Object.assign({},D,{p:hs(D.p)}))};
+$('#pvBack').onclick=()=>{$('#pv').classList.add('hide');V=null;SKIP=false;setBg(D.b);show('s5')};
+$('#pvSkip').onclick=()=>{SKIP=true};
+
+/* ===== صفحة المستلمة ===== */
+function view(d){
+  V=d;setBg(d.b);
+  $$('.vp').forEach(i=>{if(d.i1){i.src=d.i1;i.classList.remove('hide')}else i.classList.add('hide')});
+  $$('.vn').forEach(e=>e.textContent=d.n?`إلى ${d.n}`:'هدية لك');
+  $('.vt').textContent=d.n?`إلى ${d.n}`:'إليكِ';
+  let w;try{w=new Date(d.d).toLocaleString('ar',{dateStyle:'long',timeStyle:'short'})}catch(x){w=String(d.d).replace('T',' ')}$('#when').textContent=w;
+  $('#vpin').value='';$('#ve').textContent='';
+  if(new Date(d.d).getTime()>Date.now())show('lock');else show('pin');
+}
+setInterval(()=>{
+  if(cur!=='lock'||!V)return;
+  const t=new Date(V.d).getTime()-Date.now();
+  if(SKIP||!(t>0)){show('pinS');return}
+  const s=Math.floor(t/1000),d=Math.floor(s/86400);
+  $('#bd').classList.toggle('hide',!d);
+  $('#cdd').textContent=pad(d);$('#cdh').textContent=pad(Math.floor(s%86400/3600));$('#cdm').textContent=pad(Math.floor(s%3600/60));$('#cds').textContent=pad(s%60);
+},250);
+$('#vpin').addEventListener('input',e=>{
+  const v=e.target.value=e.target.value.replace(/\D/g,'');
+  if(v.length<4){$('#ve').textContent='';return}
+  if(hs(v)===V.p){resetNo();show('askS')}
+  else{$('#ve').textContent='مو هذا الرقم، جرّبي مرة ثانية (＞人＜;)';const c=$('#pinC');c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');e.target.value=''}
+});
+function openLetter(){
+  show('letter');
+  const m=$('#msg');m.className='f'+(V.f||1);m.textContent='';
+  if(V.i2){$('#pol img').src=V.i2;$('#pol').classList.remove('hide')}else $('#pol').classList.add('hide');
+  const ch=[...V.m],dl=Math.min(45,6500/Math.max(ch.length,1));let i=0;
+  setTimeout(function st(){m.textContent=ch.slice(0,++i).join('');if(i<ch.length&&cur==='letter')setTimeout(st,dl)},900);
+}
+setInterval(()=>{
+  if(cur!=='letter'||document.hidden)return;
+  const e=document.createElement('span'),a=['♡','✧','✿','(*^ω^*)',"(*'ω'*)",'･ﾟ✧'];
+  e.className='fl';e.textContent=a[Math.random()*a.length|0];
+  e.style.left=Math.random()*92+'%';e.style.fontSize=(15+Math.random()*16)+'px';
+  e.style.color=`hsl(${getComputedStyle(root).getPropertyValue('--h')} 55% 66%)`;
+  e.style.animationDuration=(6+Math.random()*4)+'s';
+  e.onanimationend=()=>e.remove();document.body.appendChild(e);
+},600);
+
+/* زر "لا" الهارب */
+const no=$('#no'),NT=['لا','متأكدة؟ (＞人＜;)','جرّبي نعم (*^ω^*)',"ما في لا هنا (*'ω'*)",'حاولي كمان'];let fl=0;
+function flee(e){
+  if(e&&e.cancelable)e.preventDefault();
+  const w=no.offsetWidth,h=no.offsetHeight,px=e&&e.clientX!=null?e.clientX:-999,py=e&&e.clientY!=null?e.clientY:-999;
+  no.style.position='fixed';no.style.zIndex=20;
+  let x,y,t=0;
+  do{x=10+Math.random()*(innerWidth-w-20);y=10+Math.random()*(innerHeight-h-20);t++}while(t<30&&Math.hypot(x+w/2-px,y+h/2-py)<150);
+  no.style.left=x+'px';no.style.top=y+'px';no.textContent=NT[++fl%NT.length];
+}
+function resetNo(){no.style.cssText='';no.textContent='لا';fl=0}
+['pointerenter','pointerdown','focus'].forEach(v=>no.addEventListener(v,flee));
+no.addEventListener('touchstart',flee,{passive:false});
+no.addEventListener('click',e=>{e.preventDefault();flee(e)});
+document.addEventListener('pointermove',e=>{
+  if(cur!=='askS')return;
+  const r=no.getBoundingClientRect();
+  if(Math.hypot(e.clientX-(r.left+r.width/2),e.clientY-(r.top+r.height/2))<80)flee(e);
+});
+addEventListener('resize',()=>{if(no.style.position==='fixed')flee()});
+$('#yes').onclick=openLetter;
+
+/* ===== تشغيل ===== */
+addEventListener('hashchange',()=>location.reload());
+const m=location.hash.match(/^#v=([A-Za-z0-9_-]+)/);
+if(m){try{view(dec(m[1]))}catch(e){show('bad')}}
+else{
+  const t=new Date();t.setDate(t.getDate()+1);t.setHours(0,0,0,0);
+  $('#dt').value=`${t.getFullYear()}-${pad(t.getMonth()+1)}-${pad(t.getDate())}T00:00`;
+  $('#ms').className='f1';chips();setBg('sakura');show('s1');
+}
+/* شبكة أمان: لو بقيت الشاشة شفافة أو ما ظهرت شاشة */
+setTimeout(()=>{const e=document.querySelector('.screen.on');if(!e){show('bad');return}if(parseFloat(getComputedStyle(e).opacity)<.5){e.style.animation='none';e.style.opacity=1}},1500);
+</script>
+</body>
+</html>
